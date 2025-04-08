@@ -23,9 +23,9 @@ interface Application {
 
 const UserDashboard: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [totalLoans, setTotalLoans] = useState<Application[]>([]);
-  const [pendingLoans, setPendingLoans] = useState<Application[]>([]);
-  const [approvedLoans, setApprovedLoans] = useState<Application[]>([]);
+  const [_totalLoans, setTotalLoans] = useState<Application[]>([]);
+  const [_pendingLoans, setPendingLoans] = useState<Application[]>([]);
+  const [_approvedLoans, setApprovedLoans] = useState<Application[]>([]);
   const [dashboardStats, setDashboardStats] = useState({
     totalNumberOfLoans: 0,
     NumberOfapprovedLoans: 0,
