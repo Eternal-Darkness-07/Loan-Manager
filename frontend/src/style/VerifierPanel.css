@@ -1,0 +1,275 @@
+.verifier-panel {
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .application-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .application-table th,
+  .application-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .status-badge {
+    padding: 0.4rem 0.8rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .status-badge.pending {
+    background-color: #fde68a;
+    color: #92400e;
+  }
+  
+  .status-badge.verified {
+    background-color: #bbf7d0;
+    color: #166534;
+  }
+  
+  
+  .details-btn:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Modal overlay blurs the background but keeps the modal content clear */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px); /* only background */
+    background-color: rgba(0, 0, 0, 0.4); /* dark transparent overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: 1001; /* ensure it's on top of the blurred overlay */
+  }
+  
+  .modal-details p {
+    margin-bottom: 0.75rem;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+  
+  .verify-btn,
+  .reject-btn {
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .verify-btn {
+    background-color: #22c55e;
+    color: white;
+  }
+  
+  .verify-btn:hover {
+    background-color: #16a34a;
+  }
+  
+  .reject-btn {
+    background-color: #ef4444;
+    color: white;
+  }
+  
+  .reject-btn:hover {
+    background-color: #dc2626;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  .table-container {
+    max-height: calc(100vh - 160px); /* header + padding space */
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  
+  /* Optional: Make table header sticky for better UX */
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-container th {
+    position: sticky;
+    top: 0;
+    background-color: #2b2d42;
+    color: white;
+    z-index: 2;
+  }
+  
+  
+  /* Styling rows */
+  .table-container td,
+  .table-container th {
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Center the button within the cell */
+.center-cell {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Styled Details button */
+.details-btn {
+  background-color: #2b2d42;
+  color: #ffffff;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.details-btn:hover {
+  background-color: #1d1f33;
+  transform: scale(1.05);
+}
+
+/* Base style for all status badges */
+.status-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Style for PENDING */
+.status-badge.pending {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+/* Optional styles for other statuses */
+.status-badge.verified {
+  background-color: #d4edda;
+  color: #52c4d3;
+  border: 1px solid #c3e6cb;
+}
+
+.status-badge.rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.status-badge.approved {
+  background-color: #49e379;
+  color: #0c6022;
+  border: 1px solid #bee5eb;
+}
+
+/* Sidebar.css */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #2b2d42;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.3s;
+  }
+  
+  .sidebar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #edf2f4;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background-color: #8d99ae;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #main {
+    transition: margin-left 0.3s;
+    padding: 20px;
+  }
+  
+  .openbtn {
+    padding: 0.5rem 1rem;
+    background-color: #ef233c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+  }
+  
+  .openbtn:hover {
+    background-color: #d90429;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .openbtn {
+      display: block;
+    }
+  }
+
+  #main {
+    transition: margin-left 0.5s;
+    padding: 20px;
+  }

@@ -1,0 +1,75 @@
+/* Container Layout */
+.user-dashboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.dashboard-main-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f5f7fa;
+  overflow-y: auto;
+}
+
+
+.user-dashboard-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden; /* Prevent scroll bleed */
+}
+
+  
+  .dashboard-main-content h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Dashboard Cards */
+  .dashboard-cards {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .card p {
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  /* Loan Status Section */
+  .loan-status {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .loan-status h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .loan-status p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  

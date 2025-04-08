@@ -1,0 +1,143 @@
+.admin-users-page {
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .add-user-btn {
+    padding: 0.6rem 1.2rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+  }
+  .add-user-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .table-container {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-container thead {
+    background-color: #2b2d42;
+    color: #fff;
+  }
+  
+  .table-container tbody {
+    display: block;
+    max-height: 400px; /* adjust height as needed */
+    overflow-y: auto;
+  }
+  
+  .table-container thead,
+  .table-container tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .table-container th,
+  .table-container td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .table-container button {
+    padding: 6px 12px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .table-container button:hover {
+    background-color: #c82333;
+  }
+  
+  .role-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+  }
+  
+  .role-badge.admin {
+    background-color: #28a745; /* Green for ADMIN */
+  }
+  
+  .role-badge.verifier {
+    background-color: #17a2b8; /* Teal for VERIFIER */
+  }  
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 500px;
+    max-width: 90%;
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .admin-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .admin-header h2 {
+    margin: 0;
+  }
+  
+  .add-user-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    height: 36px; /* adjust if needed */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-user-btn:hover {
+    background-color: #0056b3;
+  }
+  

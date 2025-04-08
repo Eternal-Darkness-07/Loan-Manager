@@ -1,0 +1,70 @@
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #edf2f4;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar.open {
+    width: 250px;
+  }
+  
+  .sidebar a {
+    padding: 12px 32px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #2b2d42;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background-color: #ccc;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 36px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #2b2d42;
+  }
+  
+  /* Main content */
+  #main {
+    transition: margin-left 0.5s;
+    padding: 20px;
+  }
+  
+  .dashboard-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent outer scroll */
+  }
+  
+  .dashboard-main {
+    display: flex;
+    flex: 1;
+    overflow: hidden; /* Prevent scroll bleed */
+  }
+  
+  .dashboard-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: #fff;
+    overflow-y: auto;  /* Outer container scrollable */
+  }
+  
+  
+  

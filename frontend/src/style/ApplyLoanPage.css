@@ -1,0 +1,128 @@
+.apply-loan-page {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.loan-card {
+  background: white;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto; /* Center card horizontally */
+}
+
+.loan-card-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #2b2d42;
+  text-align: center;
+}
+
+.loan-form .form-group {
+  margin-bottom: 1.2rem;
+}
+
+.loan-form label {
+  display: block;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.loan-form input,
+.loan-form textarea,
+.loan-form select {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.loan-form input:focus,
+.loan-form textarea:focus,
+.loan-form select:focus {
+  border-color: #2b2d42;
+}
+
+/* Card-style checkbox styling */
+.checkbox-group {
+  margin-bottom: 1.2rem;
+}
+
+.checkbox-label {
+  position: relative;
+  padding: 1rem 1rem 1rem 2.5rem; /* Increased padding for card-like appearance */
+  font-size: 0.95rem;
+  color: #333;
+  display: block;
+  line-height: 1.5;
+  cursor: pointer;
+  background-color: #f5f7fa;
+  border: 1px solid #e0e4e8;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.checkbox-label:hover {
+  background-color: #eef1f5;
+}
+
+.checkbox-label input[type="checkbox"] {
+  position: absolute;
+  left: 1rem;
+  top: 1.1rem; /* Adjusted to vertically center with first line of text */
+  width: 16px;
+  height: 16px;
+  accent-color: #0077cc;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkbox-label {
+  border-color: #0077cc;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.submit-button {
+  background-color: #141417;
+  color: white;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Optional: Style cancel button differently */
+.cancel-button {
+  background-color: #2b2d42;
+  color: white;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+  background-color: #1d1e33;
+}
+
+.submit-button:hover {
+  background-color: #1d1e33;
+}

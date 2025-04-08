@@ -1,0 +1,62 @@
+/* Sidebar.css */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #2b2d42;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.3s;
+  }
+  
+  .sidebar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #edf2f4;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background-color: #8d99ae;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #main {
+    transition: margin-left 0.3s;
+    padding: 20px;
+  }
+  
+  .openbtn {
+    padding: 0.5rem 1rem;
+    background-color: #ef233c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+  }
+  
+  .openbtn:hover {
+    background-color: #d90429;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .openbtn {
+      display: block;
+    }
+  }
