@@ -18,8 +18,8 @@ interface Application {
 
 const AdminPanel: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [pendingApplications, setPendingApplications] = useState<Application[]>([]);
-  const [admins, setAdmins] = useState<Admin[]>([]);
+  const [_pendingApplications, setPendingApplications] = useState<Application[]>([]);
+  const [_admins, setAdmins] = useState<Admin[]>([]);
 
   const [dashboardStats, setDashboardStats] = useState({
     totalPendingApplications: 0,
