@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:5000'; // Adjust if your backend is hosted elsewhere
+const API_BASE_URL = 'https://loan-manager-obap.onrender.com'; // Adjust if your backend is hosted elsewhere
 
 const getToken = () => localStorage.getItem('token');
 
