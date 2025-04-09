@@ -67,17 +67,6 @@ const LoanstatusPanel: React.FC = () => {
 
   return (
     <>
-    <div id="mySidebar" className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
-        <a className="closebtn" onClick={toggleSidebar}>&times;</a>
-        <a href="/dashboard">Dashboard</a>
-        {user?.role === 'USER' && (
-          <>
-            <a href="/apply-loan">Apply for Loan</a>
-            <a href="/loan-status">Loan Status</a>
-          </>
-        )}
-        <a href="/profile">Profile</a>
-    </div>
     <Header onLogout={handleLogout} onToggleSidebar={toggleSidebar} />
     <Sidebar userRole='USER' isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
     <div id="main" style={{ marginLeft: sidebarOpen ? 250 : 0 }}> 
