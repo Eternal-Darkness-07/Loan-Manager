@@ -19,6 +19,9 @@ const links = {
     { href: '/admin/applications', label: 'Applications' },
     { href: '/admin/users', label: 'Manage Users' },
   ],
+  VERIFIER: [
+    { href: '/dashboard', label: 'Dashboard' },
+  ],
 };
 
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose, userRole }) => {

@@ -29,7 +29,7 @@ const LoanstatusPanel: React.FC = () => {
   const [selectedApp, setSelectedApp] = useState<Application | null>(null);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [user, setUser] = useState<User | null>(null);
+  const [_user, setUser] = useState<User | null>(null);
   const navigate = useNavigate();
 
 
